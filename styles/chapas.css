@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-*{
-}
 
 :root{
     --card: #B7C2FC;
@@ -19,7 +17,7 @@ main{
     justify-items: center;
     flex-direction: row;
     justify-content: space-around;
-    
+
 }
 
 section > h1{

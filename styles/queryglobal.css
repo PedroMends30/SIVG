@@ -2,7 +2,7 @@
     /*Quando o site atingir a largura máxima de 760px*/
     header{
         flex-direction: column;
-        
+        justify-content: space-around;
     }
 
     header nav{
@@ -16,7 +16,10 @@
         display: flex;
         align-content: stretch;
     }
-    header a{
+    li{
+        width: 70px;
+    }
+    a{
         font-size: .8em;
     }
     

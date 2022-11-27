@@ -8,6 +8,10 @@
         display: none;
     }
 
+    h1{
+        font-size: 1em;
+        left: 10px;
+    }
     
 }
 /*Todas as demais mídias*/
