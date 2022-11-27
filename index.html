@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <!--Link Para estilos e scripts-->
+    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="stylesheet" href="./Style/indexQuery.css">
+    <script src="./Script/landingPageScript.js" defer></script>
+    <script src="./Script/cadastro.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body onresize="mudouTamanho()">
+    <section>
+        <header>
+            <span class="material-icons" id="burger" onclick="clickMenu()">menu</span>
+            <menu id="itens">
+                <ul>
+                    <li><a href="./Pages/cadastro.html">Cadastro/LandingPage</a></li>
+                    <li><a href="./Pages/form2.html" >Formulário teste</a></li>
+                    <li><a href="./Pages/card.html">Card</a></li>
+                    <li><a href="#" onclick="form()">Cadastre se</a></li>
+                </ul>
+            </menu>
+        </header>
+        <main>
+        <div id="form">
+            <iframe src="./Pages/form2.html" frameborder="0"></iframe>
+        </div>
+        </main>
+    </section>
+    <footer></footer>
+</body>
+</html>

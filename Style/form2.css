@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap");
+
+
+:root{
+    --cor-primaria: #131086;
+    --cor-secundaria: #b621f3;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(45deg, var(--cor-primaria), var(--cor-secundaria));
+    padding: 40px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius:  10px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.login-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: white;
+}
+
+.login-right{
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.login-right img{
+    width: 80%;
+}
+
+.login-header{
+    margin-bottom: 50px;
+}
+
+p{
+    text-align: center;
+    font-size: 18px;
+    opacity: .7;
+}
+
+.login-form{
+    width: 450px;
+}
+
+.login-form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 0 50px;
+}
+
+.form-item label:not(.checkboxLabel){
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 0 10px;
+    transform: translate(30px, -10px);
+    font-size: 14px;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email']{
+    border: 1px solid black;
+    height: 50px;
+    padding: 0 2rem;
+    width: 100%;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 100px;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus{
+    border-color: var(--cor-primaria);
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    accent-color: var(--cor-primaria);
+}
+
+button{
+    border: none;
+    background: linear-gradient(45deg, var(--cor-primaria), var(--cor-secundaria));
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: 45px;
+    cursor: pointer;
+}
+
+/*Responsivo*/
+
+@media (max-width: 1350px){
+    .login-left{
+        padding: 50px !important;
+    }
+
+    .login-form{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        padding: 20px;
+
+    }
+    .container{
+        grid-template-columns: auto;
+    }
+    .login-right{
+        display: none;
+    }
+}
