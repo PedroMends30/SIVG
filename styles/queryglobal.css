@@ -16,6 +16,9 @@
         display: flex;
         align-content: stretch;
     }
+    header a{
+        font-size: .8em;
+    }
     
 }
 /*Todas as demais mídias*/
