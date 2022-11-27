@@ -4,35 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>SIVG</title>
 
-    <!--Link Para estilos e scripts-->
-    <link rel="stylesheet" href="./Style/index.css">
-    <link rel="stylesheet" href="./Style/indexQuery.css">
-    <script src="./Script/landingPageScript.js" defer></script>
-    <script src="./Script/cadastro.js" defer></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <!--Link dos estilos e dos scripts-->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/queryindex.css">
 </head>
-<body onresize="mudouTamanho()">
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./pages/chapas.html">Chapas</a></li>
+                <li><a href="./pages/candidatosselecionado.html">Resultados</a></li>
+                <li><a href="./pages/estatisticasgerais.html">Estatísticas Gerais</a></li>
+            </ul>
+        </nav>
+    </header>
     <section>
-        <header>
-            <span class="material-icons" id="burger" onclick="clickMenu()">menu</span>
-            <menu id="itens">
-                <ul>
-                    <li><a href="./Pages/cadastro.html">Cadastro/LandingPage</a></li>
-                    <li><a href="./Pages/form2.html" >Formulário teste</a></li>
-                    <li><a href="./Pages/card.html">Card</a></li>
-                    <li><a href="#" onclick="form()">Cadastre se</a></li>
-                </ul>
-            </menu>
-        </header>
         <main>
-        <div id="form">
-            <iframe src="./Pages/form2.html" frameborder="0"></iframe>
-        </div>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet excepturi consectetur quis, modi cumque perspiciatis autem eum doloribus! Adipisci nobis sunt veritatis dolorem, quasi possimus quo voluptatibus tempora neque non!</p>
+            </article>
+            
+            <div id="login-form">
+                <form action="" autocomplete="on">
+                    <label for="inome">Nome </label>
+
+                    <input type="text" name="nome" id="inome" required maxlength="50" placeholder="Digite seu nome">
+
+                    <label for="imatricula">Matrícula </label>
+
+                    <input type="text" name="matricula" id="imatricula" required maxlength="11" minlength="11" max="11" min="11" placeholder="Digite sua matrícula">
+                    <input type="submit" value="Entrar"id="entrar">
+                </form>
+            </div>
         </main>
     </section>
-    <footer></footer>
+    <footer>
+        
+    </footer>
 </body>
 </html>

@@ -1,0 +1,95 @@
+@media screen and (max-width: 760px){/*celular*/
+    /*Quando o site atingir a largura máxima de 760px*/
+    header{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    h2{
+        font-size: 38px;
+    }
+    form{
+        margin: 0 auto;
+        width: 100%;
+    }
+    input{
+        align-self: center;
+    }
+    ul{
+        text-align: center;
+    }
+
+    header nav{
+        padding-left: 0;
+    }
+
+    section p{
+        
+        font-size: 1em;
+        padding: 0;
+    }
+
+    form > label{
+        margin-left: 40px;
+    }
+
+    footer{
+        display: none;
+    }
+    ul{
+        display: flex;
+        align-content: stretch;
+    }
+    a{
+        font-size: 0.6em;
+        padding: 8px 8px;
+    }
+
+    div#login-form{
+        width: 300px;
+        height: 350px;
+        background: #B3BAF9;
+        border-radius: 35px 10px;
+        margin-top: 30px;
+    }
+    form::before{
+        content: "Entre com suas informações";
+        background-color: var(--box-form);
+        width: 115.24px;
+        height: 50.32px;
+        left: 459.04px;
+        top: 117px;
+        color: #FFFFFF;
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+        font-size: 16px;
+        transform: translate(-25%, -25%);
+        padding: 15px 15px;
+        border-radius: 15px;
+        text-align: center;
+    }
+}
+/*Todas as demais mídias*/
+/*Typical Device BreakPoints0
+Pequenas telas: até 600px
+Celular: Até 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: Acima de 1200px
+*/
+
+@media print{ /*Impressão*/
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {/*Tablet*/
+   
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){/*Desktop*/
+
+}
+
+@media screen and (min-width: 1200px){/*Telas grandes */
+   
+}

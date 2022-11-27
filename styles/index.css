@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+:root{
+    --font: #D83939;
+    --entrar: #FF8328;
+    --form: #B3BAF9;
+    --box-form: #9262C2;
+}
+
+*{
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+section p{
+    color: var(--font);
+    font-size: 1.5em;
+    line-height: 35px;
+    max-width: 550px;
+    padding: 80px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    align-content: space-between;
+}
+
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    margin-left: 10%;
+}
+
+div#login-form{
+    display: block;
+    align-items: center;
+    flex-direction: row;
+    align-self: center;
+    width: 500px;
+    height: 450px;
+    left: 513.76px;
+    top: 148.78px;
+    background: #B3BAF9;
+    border-radius: 35px 10px;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-size: 1.3em;
+    margin: 30px auto;
+}
+
+form::before{
+    content: "Entre com suas informações";
+    background-color: var(--box-form);
+    width: 199.24px;
+    height: 78.32px;
+    left: 459.04px;
+    top: 117px;
+    color: #FFFFFF;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+
+    transform: translate(-55%, -55%);
+    padding: 15px 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+form [type = "submit"]{
+    margin: auto;
+    height: 50px;
+    width: 70%;
+    background-color: var(--entrar);
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #FFFFFF;
+}
+
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+}
+
+input#entrar{
+    border: 2px solid var(--form);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+input#entrar:hover{
+    background-color: #a64906;
+    color: #FFFFFF;
+}
+input#entrar:focus{
+    transform: scale(1.04);
+}
+
