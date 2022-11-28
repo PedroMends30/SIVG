@@ -1,0 +1,106 @@
+@charset "UTF-8";
+*{
+
+}
+
+:root{
+    --card: #8488B4;
+    --descricao: #BD97E3;
+    --titulo: #727AC9;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-height: 85.4%;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: scroll;
+    margin-left: 25%;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+article.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--card);
+    color: #FFFFFF;
+    margin: auto;
+}
+
+div.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--titulo);
+    color: #FFFFFF;
+    font-weight: 500;
+    width: 64%;
+    text-indent: 20px;
+    margin: 20px 20px 8px 23%;
+    padding: 15px;
+    
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+div.header > p > img{
+    background-color: #F4F4F4F4;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+div.header > p img:hover{
+    background-color: #FFFFFF;
+}
+
+div.header h1{
+    font-size: 1.3em;
+}
+
+div.header p{
+    font-weight: 600;
+    font-size: 18px;
+}
+div.card-chapa{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+div.card-chapa img, div.card-chapa .descricao{
+    border-radius: 10px;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+div.card-chapa img{
+    background-color: #FFFFFF;
+    margin-right: 10px;
+}
+
+div.descricao p{
+    border-radius: 10px;
+    line-height: 18px;
+}
+
+span.quant-votos{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.descricao{
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    background-color: var(--descricao);
+}

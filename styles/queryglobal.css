@@ -17,8 +17,9 @@
         align-content: stretch;
     }
     li{
+        border-radius: 10px; 
         width: 70px;
-    }
+     }
     a{
         font-size: .8em;
     }
