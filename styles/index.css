@@ -11,6 +11,9 @@
 
 }
 
+header{
+    position: sticky;
+}
 
 section main{
     display: flex;
