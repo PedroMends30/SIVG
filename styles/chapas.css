@@ -72,6 +72,8 @@ div.descricao{
     height: 80%;
     box-sizing: content-box;
     background-color: var(--informacao);
+    color: #F4F4F4F4;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.205);
 }
 
 div.descricao::after{

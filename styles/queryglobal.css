@@ -12,14 +12,23 @@
     footer{
         display: none;
     }
-    ul{
-        display: flex;
-        align-content: stretch;
-    }
     li{
         border-radius: 10px; 
         width: 70px;
      }
+     
+    nav{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: flex-start;
+    }
+    nav ul{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
     a{
         font-size: .8em;
     }

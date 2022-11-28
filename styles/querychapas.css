@@ -1,5 +1,8 @@
 @media screen and (max-width: 760px){/*celular*/
     /*Quando o site atingir a largura máxima de 760px*/
+    *{
+        
+    }
     main{
         flex-direction: column;
         top: 100px;
@@ -10,8 +13,9 @@
 
     section h1{
         text-align: center;
-        margin-left: 0;
+        margin-top: 2px;
         width: 100%;
+        left: 0;
     }
     
 }
