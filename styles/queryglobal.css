@@ -3,22 +3,6 @@
     header{
         flex-direction: row;
     }
-    nav{
-        padding-left: 0;
-        width: 100%;
-    }
-    nav ul{
-        flex-direction: row;
-        width: 100%;
-    }
-
-    header > nav > ul li{
-        width: 6.4rem;
-        display: flex;
-    }
-    header > nav > ul li a{
-        font-size: 13px;
-    }
     
 }
 /*Todas as demais mídias*/
