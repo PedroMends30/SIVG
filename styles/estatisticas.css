@@ -53,6 +53,7 @@ div.header > p > img{
     background-color: #F4F4F4F4;
     cursor: pointer;
     border-radius: 50%;
+    margin-left: 20px;
 }
 
 div.header > p img:hover{

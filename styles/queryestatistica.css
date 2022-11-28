@@ -6,7 +6,8 @@
     }
     
     .header img{
-        width: 20px;
+        width: 30px;
+        height: 30px;
     }
 
     main{
@@ -20,7 +21,10 @@
     }
 
     section > .header p{
-        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+          
     }
     
 }

@@ -4,6 +4,7 @@
         flex-direction: column;
     }
     main{
+        margin-top: 20px;
         flex-direction: column;
     }
     h2{
@@ -16,16 +17,11 @@
     input{
         align-self: center;
     }
-    ul{
-        text-align: center;
-    }
-
-    header nav{
-        padding-left: 0;
+    section > main > article{
+        margin: auto;
     }
 
     section p{
-        
         font-size: 1em;
         padding: 0;
     }
@@ -34,24 +30,15 @@
         margin-left: 40px;
     }
 
-    footer{
-        display: none;
-    }
-    ul{
-        display: flex;
-        align-content: stretch;
-    }
-    a{
-        padding: 8px 8px;
-    }
-
-    div#login-form{
+    section > main > div#login-form{
         width: 300px;
         height: 350px;
         background: #B3BAF9;
         border-radius: 35px 10px;
         margin-top: 30px;
+        margin-bottom: 7%;
     }
+
     form::before{
         content: "Entre com suas informações";
         background-color: var(--box-form);
