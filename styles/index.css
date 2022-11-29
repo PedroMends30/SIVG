@@ -69,6 +69,13 @@ form{
 label, input{
     font-weight: 600;
 }
+
+label::after{
+    content: "*";
+    color: red;
+    font-size: 1.5rem;
+}
+
 label{
     font-size: 1.2em;
     color: #FFFFFF;
