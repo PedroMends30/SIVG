@@ -1,7 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 760px){
-    *{
-        border: 1px solid;
-    }
+@media screen and (min-width: 320px) and (max-width: 759px){
     section main article{
        overflow-y: scroll;
     }
@@ -15,6 +12,27 @@
     }
     section main form{
         height: 288px;
+    }
+
+    section form::before{
+        content: "Entre com suas informações";
+        background-color: var(--box-form);
+        width: 115.24px;
+        height: 27.32px;
+        left: 459.04px;
+        top: 117px;
+        color: #FFFFFF;
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+        font-size: 14px;
+        transform: translate(-55%, -1%);
+        padding: 0px 15px 15px;
+        border-radius: 15px;
+        text-align: center;
+    }
+    section .img-principal{
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
@@ -93,7 +111,15 @@ Grandes telas: Acima de 1200px
     
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 835px) {/*Tablet*/
+    section main{
+        max-height: 100%;
+    }
+    section main article{
+        margin: 0;
+       padding-top: 30px;
+    }
+
     section main article p{
         padding-top: 20px;
         font-size: 1.2em;
@@ -101,14 +127,75 @@ Grandes telas: Acima de 1200px
     }
 
     section .img-principal{
-        height: 435px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    form::before{
+        content: "Entre com suas informações";
+        background-color: var(--box-form);
+        width: 115.24px;
+        height: 43.32px;
+        left: 459.04px;
+        top: 117px;
+        color: #FFFFFF;
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+        font-size: 14px;
+        transform: translate(-65%, -30%);
+        padding: 10px 15px 15px;
+        border-radius: 15px;
+        text-align: center;
+    }
+}
+
+/*@media screen and (min-width: ) and (max-width: 879){
+
+}
+*/
+
+@media screen and (min-width: 880px) and (max-width: 992px){
+    /*Tablet*/
+    section main{
+        max-height: 100%;
+    }
+    section main article{
+        margin: 0;
+        padding-top: 30px;
+    }
+    section main{
+        margin: 0;
+    }
+
+    form::before{
+        content: "Entre com suas informações";
+        background-color: var(--box-form);
+        width: 150.24px;
+        height: 32.32px;
+        color: #FFFFFF;
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    
+        transform: translate(-40%, -15%);
+        padding: 15px 15px;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    section .img-principal{
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px){/*Desktop*/
-    
 }
 
 @media screen and (min-width: 1200px){/*Telas grandes */
-   
+    section main article{
+        font-size: 1.3em;
+    }
+
+    section main article p{
+        line-height: 45px;
+    }
+    
 }
