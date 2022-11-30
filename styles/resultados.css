@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+:root{
+    --article-body: 
+    #F66A6A;
+    --conteudo:
+    #EA7373;
+    --percentual: 
+    #F66A6A;
+}
+section{
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    margin: 0 10%;
+    width: 80%;
+    height: 80%;
+    
+    gap: 60px;
+}
+
+section > main > article{
+    width: 30%;
+}
+
+section > main > article#resultado{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--article-body);
+    height: 50%;
+    width: 45%;
+}
+
+section > main > article#percentual-resultado{
+    height: 50%;
+    width: 500px;
+    background-color: 
+    #F66A6A;
+}
+
+section > main > article#resultado .conteudo img{
+    width: 150px;
+    height: 150px;
+    background-color: #FFFFFF;
+
+}
+section > main > article#resultado div.conteudo{
+    background-color: var(--conteudo);
+    display: flex;
+    flex-direction: row;
+}
+
+section > main > article#resultado div.conteudo button{
+    margin-left: 100%;
+}
+section > main > article#resultado div.conteudo button{
+    margin-left: 100%;
+}
+
+section > main > article#percentual-resultado h2{
+    color: #FFFFFF;    
+}
+
