@@ -1,3 +1,23 @@
+@media screen and (min-width: 320px) and (max-width: 760px){
+    *{
+        border: 1px solid;
+    }
+    section main article{
+       overflow-y: scroll;
+    }
+
+    section main article p{
+        height: 100%;
+    }
+
+    section main{
+        margin-bottom: 0;
+    }
+    section main form{
+        height: 288px;
+    }
+}
+
 @media screen and (max-width: 760px){/*celular*/
     /*Quando o site atingir a largura máxima de 760px*/
     header{
@@ -18,7 +38,6 @@
     section > main > article{
         height: 400px;
         margin: auto;
-        background-color: #b3baf9;
     }
 
     section main article p{
