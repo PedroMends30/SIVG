@@ -36,7 +36,7 @@
     }
 }
 
-@media screen and (max-width: 760px){/*celular*/
+@media screen and (max-width: 767px){/*celular*/
     /*Quando o site atingir a largura máxima de 760px*/
     header{
         flex-direction: column;
