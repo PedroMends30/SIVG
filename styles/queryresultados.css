@@ -1,0 +1,72 @@
+@media screen and (min-width: 320px) and (max-width: 759px){
+    
+    section{
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+    }
+    main{
+        width: 100%;
+        flex-direction: column;
+    }
+    main article#resultado{
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    main > article#resultado img{
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    main > article#resultado p{
+        text-align: justify;
+    }
+
+    button#btn{
+        display: block;
+        width: 100vw;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 767px){/*celular*/
+    /*Quando o site atingir a largura máxima de 760px*/
+    
+
+}
+/*Todas as demais mídias*/
+/*Typical Device BreakPoints0
+Pequenas telas: até 600px
+Celular: Até 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: Acima de 1200px
+*/
+
+@media print{ /*Impressão*/
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 879px) {/*Tablet*/
+    
+}
+
+/*@media screen and (min-width: ) and (max-width: 879){
+
+}
+*/
+
+@media screen and (min-width: 880px) and (max-width: 992px){
+    /*Tablet*/
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){/*Desktop*/
+}
+
+@media screen and (min-width: 1200px){/*Telas grandes */
+    
+    
+}

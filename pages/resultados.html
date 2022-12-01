@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../styles/resultados.css">
     <link rel="stylesheet" href="../styles/queryresultados.css">
 </head>
-<body>
+<body onresize="innerGraficoTelasMenores()">
     <header>
         <nav>
             <ul>
@@ -27,7 +27,7 @@
         <main>
             <article id="resultado">
                 <img src="../components/images/user.png" width="400" height="400" alt="Chapa eleita">
-                <p>Informações da Chapa eleita<br>
+                <p id="paragrafo">Informações da Chapa eleita<br>
                     Nome <br>
                     Série <br>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quibusdam, reiciendis modi aspernatur et repellendus eveniet exercitationem nostrum blanditiis voluptate, reprehenderit veritatis, odit sed possimus? Beatae quaerat rem saepe explicabo. <br> <br>
@@ -37,13 +37,16 @@
                     <br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque eius nam consequatur doloremque, dolorem similique voluptate. Ea repudiandae, aspernatur voluptas saepe molestiae magnam, eius ut quae ducimus atque pariatur.
                 </p>
+                <div id="grafico">
+                    <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/tipos-graficos-pizza-matematica.jpg" alt="imagem de grafico">
+                </div>
             </article>
             <article id="percentual-resultado">
                 <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/tipos-graficos-pizza-matematica.jpg" alt="imagem de grafico">
             </article>
         </main>
     </section>
-    <button onclick="innerGrafico()" id="btn">Quantidade de Votos</button>
+    <button onclick="innerGrafico(); innerGraficoTelasMenores()" id="btn">Quantidade de Votos</button>
 
     <script>
         function innerGrafico(){
@@ -55,7 +58,27 @@
             else{
                 btn.style.display= 'none';
             }
+
+            //mostra o grafico para telas menores no lugar da descricao
         }
+        function innerGraficoTelasMenores(){
+            var paragrafo = document.getElementById("paragrafo");
+
+            var grafico = document.getElementById("grafico");
+            var percentual_resultado = document.getElementById("percentual-resultado");
+            percentual_resultado.style.display = 'none';
+            if(window.innerWidth >= 320 && window.innerWidth <= 720 && paragrafo.style.display == 'block' && grafico.style.display == 'none'){
+                paragrafo.style.display = 'none';
+                grafico.style.display = 'block';
+            }
+            else{
+                paragrafo.style.display = 'block';
+                grafico.style.display = 'none';
+            }  
+            if(window.innerWidth >= 320){
+
+            }
+          }
     </script>
 </body>
 </html>
