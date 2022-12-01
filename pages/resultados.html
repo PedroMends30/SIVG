@@ -26,21 +26,36 @@
     <section>
         <main>
             <article id="resultado">
-                <div class="conteudo">
-                    <img src="../components/images/user.png" width="400" height="400" alt="Chapa eleita">
-                    <p>Informações da Chapa eleita<br>
-                        Nome <br>
-                        Série <br>
-                        <button>Mostrar menos</button>
-                    </p>
-                </div>
+                <img src="../components/images/user.png" width="400" height="400" alt="Chapa eleita">
+                <p>Informações da Chapa eleita<br>
+                    Nome <br>
+                    Série <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quibusdam, reiciendis modi aspernatur et repellendus eveniet exercitationem nostrum blanditiis voluptate, reprehenderit veritatis, odit sed possimus? Beatae quaerat rem saepe explicabo. <br> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos id cum enim consequuntur error maiores voluptates, architecto culpa ratione vel dolore explicabo nihil, veritatis impedit temporibus possimus reiciendis magnam.
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deserunt saepe id quos quidem at cumque placeat quam rerum facere fugiat quasi voluptate dignissimos excepturi perferendis, distinctio a repellat assumenda.
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque eius nam consequatur doloremque, dolorem similique voluptate. Ea repudiandae, aspernatur voluptas saepe molestiae magnam, eius ut quae ducimus atque pariatur.
+                </p>
             </article>
             <article id="percentual-resultado">
-                <h2>Quantidade de Votos</h2>
-                <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/tipos-graficos-pizza-matematica.jpg" alt="grafico das chapas" width="200" height="200">
+                <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/tipos-graficos-pizza-matematica.jpg" alt="imagem de grafico">
             </article>
         </main>
     </section>
-    
+    <button onclick="innerGrafico()" id="btn">Quantidade de Votos</button>
+
+    <script>
+        function innerGrafico(){
+            var btn = document.getElementById("percentual-resultado");
+
+            if(btn.style.display == 'none') {
+                btn.style.display = 'block';
+            }
+            else{
+                btn.style.display= 'none';
+            }
+        }
+    </script>
 </body>
 </html>
