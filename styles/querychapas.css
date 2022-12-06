@@ -9,6 +9,7 @@
     section main div.card-candidato{
         margin-top: 20px;
     }
+
 }
 @media screen and (max-width: 760px){/*celular*/
     /*Quando o site atingir a largura máxima de 760px*/
@@ -25,7 +26,6 @@
 
     section h1{
         text-align: center;
-        margin-top: 2px;
         width: 100%;
         left: 0;
     }

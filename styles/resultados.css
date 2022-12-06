@@ -57,7 +57,8 @@ main > article#resultado p{
     height: 300px;
     line-height: 30px;
     border-radius: 10px;
-    padding: 5px;
+    padding: 15px;
+    border: 1px solid black;
 }
 
 main > article#percentual-resultado{
