@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+:root{
+    --article-body: #F6F6F6;
+    --conteudo:
+    #EA7373;
+    --percentual: 
+    #F66A6A;
+    --body-page: #1D1B7A;
+    --button: 
+    #FF7B01;
+}
+section{
+    background-color: var(--body-page);
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+section > main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+main{
+
+}
+
+main > article#resultado{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    background-color: var(--article-body);
+    gap: 50px;
+    min-height: 80%;
+    margin: 0 5%;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+main > article#resultado{
+
+}
+main > article#resultado img{
+    max-width: 300px;
+    max-height: 300px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+main > article#resultado p{
+    overflow-y: scroll;
+    height: 300px;
+    line-height: 30px;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+main > article#percentual-resultado{
+    display: none;
+    margin-right: 20px;
+}
+main > article#percentual-resultado img{
+    height: 100%;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+button#btn{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    width: 400px;
+    height: 50px;
+    background-color: var(--button);
+    color: #FFFFFF;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+button#btn:hover{
+    cursor: pointer;
+    background-color: #d16805;
+}
+
+#paragrafo{
+    display: block;
+}
+
+#grafico{
+    display: none;
+}
+
+.h1{
+    display: none;
+}

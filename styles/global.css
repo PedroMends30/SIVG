@@ -13,12 +13,14 @@
     --header: #5C6AED;
     --header_link: #8591FE;
     --footer: #B3BAF9;
+    --body-page: #1D1B7A;
 }
 html{
     height: 100vh;
     width: 100vw;
-    background-color: boy;
+    background-color: var(--body);
 }
+
 
 body{
     width: 100%;
@@ -93,7 +95,7 @@ header > nav a:focus{
 }
 
 section{
-    background-color: var(--body);
+    background-color: var(--body-page);
     height: 77%;
 }
 

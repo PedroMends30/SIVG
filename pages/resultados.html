@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIVG</title>
+    
+    <!-- Link para estilos e script -->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/queryglobal.css">
+
+    <link rel="stylesheet" href="../styles/resultados.css">
+    <link rel="stylesheet" href="../styles/queryresultados.css">
+</head>
+<body onresize="innerGraficoTelasMenores()">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html" target="_self">Home</a></li>
+                <li><a href="./chapas.html" target="_self">Chapas</a></li>
+                <li><a href="./estatisticasgerais.html" target="_self">Estatísticas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <main>
+            <article id="resultado">
+                <img src="../components/images/user.png" width="400" height="400" alt="Chapa eleita">
+                <p id="paragrafo">Informações da Chapa eleita<br>
+                    Nome <br>
+                    Série <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quibusdam, reiciendis modi aspernatur et repellendus eveniet exercitationem nostrum blanditiis voluptate, reprehenderit veritatis, odit sed possimus? Beatae quaerat rem saepe explicabo. <br> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos id cum enim consequuntur error maiores voluptates, architecto culpa ratione vel dolore explicabo nihil, veritatis impedit temporibus possimus reiciendis magnam.
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deserunt saepe id quos quidem at cumque placeat quam rerum facere fugiat quasi voluptate dignissimos excepturi perferendis, distinctio a repellat assumenda.
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque eius nam consequatur doloremque, dolorem similique voluptate. Ea repudiandae, aspernatur voluptas saepe molestiae magnam, eius ut quae ducimus atque pariatur.
+                </p>
+                <div id="grafico">
+                    <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/tipos-graficos-pizza-matematica.jpg" alt="imagem de grafico">
+                </div>
+            </article>
+            <article id="percentual-resultado">
+                <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/tipos-graficos-pizza-matematica.jpg" alt="imagem de grafico">
+            </article>
+        </main>
+    </section>
+    <!--<button onclick="innerGrafico(); innerGraficoTelasMenores()" id="btn">Quantidade de Votos</button>-->
+    <!--<script>
+        function innerGrafico(){
+            var btn = document.getElementById("percentual-resultado");
+
+            if(btn.style.display == 'none') {
+                btn.style.display = 'block';
+            }
+            else{
+                btn.style.display= 'none';
+            }
+
+            //mostra o grafico para telas menores no lugar da descricao
+        }
+        function innerGraficoTelasMenores(){
+            var paragrafo = document.getElementById("paragrafo");
+
+            var grafico = document.getElementById("grafico");
+            var percentual_resultado = document.getElementById("percentual-resultado");
+            percentual_resultado.style.display = 'none';
+            if(window.innerWidth >= 320 && window.innerWidth <= 720 && paragrafo.style.display == 'block' && grafico.style.display == 'none'){
+                paragrafo.style.display = 'none';
+                grafico.style.display = 'block';
+            }
+            else{
+                paragrafo.style.display = 'block';
+                grafico.style.display = 'none';
+            }  
+            if(window.innerWidth >= 320){
+
+            }
+          }
+    </script>
+    -->
+</body>
+</html>
